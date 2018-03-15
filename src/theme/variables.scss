@@ -86,3 +86,16 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+// Top Toolbar
+$toolbar-md-background: color($colors, primary);
+
+// Bottom Tabs
+$tabs-md-background: color($colors, primary);
+$tabs-md-tab-color-active: color($colors, light);
+$tabs-md-tab-color: color($colors, light);
+$tabs-md-tab-text-color: color($colors, light);
+
+$list-md-background-color: color($colors, primary);
+$list-md-text-color: color($colors, light);
