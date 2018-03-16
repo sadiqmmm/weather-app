@@ -8,6 +8,7 @@ import { Storage } from '@ionic/storage';
 })
 export class HomePage {
   weather: any;
+
   location: {
     city: string,
     state: string
@@ -32,7 +33,7 @@ export class HomePage {
       }
 
       this.weatherProvider.getWeather(this.location.city, this.location.state).subscribe(weather => {
-        this.weather = weather.current_observation;
+        this.weather = weather["current_observation"];
       });
 
     });
